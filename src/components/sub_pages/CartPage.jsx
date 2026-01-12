@@ -60,7 +60,6 @@ function CartPage() {
 
   return (
     <div className="container mx-auto  p-5">
-      <Header_class />
       <h1 className="text-3xl font-bold mb-5">Shopping Cart</h1>
 
       {cartItems.length > 0 ? (

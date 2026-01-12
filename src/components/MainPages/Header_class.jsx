@@ -100,7 +100,7 @@ function Header_class() {
           {!userName ? (
             // ✅ Show Login if not logged in
             <Link
-              to="/Log_in"
+              to="/Login"
               className="px-3 py-2 rounded-lg hover:bg-indigo-800 hover:text-white transition-all duration-300 flex items-center space-x-2"
             >
               <FontAwesomeIcon icon={faRightToBracket} />

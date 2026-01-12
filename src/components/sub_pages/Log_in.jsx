@@ -27,8 +27,10 @@ function Log_in() {
         // Save token
         localStorage.setItem("token", data.token);
         // ✅ Save user name too
-        if (data.user && data.user.name) {
+        if (data.user && data.user.name && data.user.email) {
           localStorage.setItem("userName", data.user.name);
+          localStorage.setItem("userEmail", data.user.email);
+          localStorage.setItem("userCreatedAt",data.user.createdAt);
         }
 
         navigate("/home");
